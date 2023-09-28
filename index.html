@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'Proza': ['Proza Libre', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <title>Narakorn Portfolio</title>
+
+</head>
+<body class="bg-slate-100 flex justify-center">
+
+  <div class="container bg-white shadow-2xl">
+    <nav class="flex justify-between px-4 py-4 mx-auto bg-gradient-to-t from-white -100 to-gray-300 hover:bg-[#EFEEEC]">
+      <div>
+        <h3 class="text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white" id="line">Narakorn</h3>
+      </div>
+      <div class="hidden space-x-8  font-Proza lg:flex ">
+        <a class="hover:text-red-300" href="#">About Me</a>
+        <a class="hover:text-red-300" href="#">Education</a>
+        <a class="hover:text-red-300" href="#">Experience</a>
+        <a class="hover:text-red-300" href="#">Contact</a>
+      </div>
+      <div class="flex lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <!-- about me -->
+    <div class="m-5 flex flex-col items-center  lg:flex-row lg:gap-2" >
+        
+        <div class="text-[#d7cece] font-Noto flex flex-col gap-4 md:justify-center :w-full relative">
+            <div class="text-center text-md  md:text-3xl xl:text-4xl absolute top-1/4 left-11 " id="ImFresh">
+                <h1>Hey There,</h1>
+                <h1>I'm Fresh</h1>
+            </div>
+
+            <img class="w-[90%] md:max-w-1/2 "src="img/profile.jpg" alt="profile ">
+        </div>
+
+        <div class="flex flex-col">
+            <div class="m-3">
+                <p class="font-medium text-lg text-center md:text-xl lg:text-2xl">I am one of the people interested in Front-End Dev and currently I am a student in Dev init camp.</p>
+            </div>
+            <div>
+                <p class="m-1 text-xl text-center lg:text-2xl"">Bu.narakorn@gmail.com</p>
+            </div>
+        </div>
+        
+    </div>    
+
+    <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 bg-slate-80 m-4 ">
+      <div class="felx relative rounded-lg bg-slate-200 lg:bg-slate-200 p-3" id="AboutMe"><span class="m-3 font-medium">About me</span><p class="m-3">
+        As a highly experienced senior-level professional with 6 years of expertise in radio planning and optimization, I am now seeking new opportunities in the field of telecommunication. With my skills in coding and analyzing data, I am confident that I can bring value to any project and contribute to the success of the team.</p></div>
+      <div class="rounded-lg bg-slate-50 lg:bg-slate-50 p-3" id="Education">
+        <span class="m-3 font-medium">Education</span>
+        <div class="m-3">
+        <p>2012 - 2016 King Mongkut’s University of Technology Thonburi Bachelor’s Degree Faculty of Engineering (Electronic & Telecommunication)</p>
+        <p>2010 - 2012 Kalasinpittayasan school (Sci-Math)</p>
+        </div>
+      </div>
+      <div class="rounded-lg bg-slate-200 lg:bg-slate-50 p-3" id="Skill">
+        <span class="m-3 font-medium">Skill</span>
+        <div class="flex gap-2 m-3">
+            <P>Data analyst : Python pandas , Excel , SQL , TIBCO Spotfire ,Tableau , PowerBi   </P>
+        </div>
+        <div class="flex gap-2 m-3">
+          <p>Front end developer : HTML , CSS , JavaScript</p>
+      </div>
+      </div>
+      <div class="rounded-lg bg-slate-50 lg:bg-slate-200 p-3" id="Portfolio">
+        <span class="m-3 font-medium">Portfolio</span>
+        <div class="m-3">
+        <a href="https://lucent-trifle-bc012e.netlify.app/"><p class="hover:text-red-700 hover:font-medium">Results summary component</p></a>
+        <a href="https://incandescent-pixie-06ee91.netlify.app/"><p class="hover:text-red-600 hover:font-medium" >Interactive rating component</p></a>
+        <a href="https://rad-torte-e72eee.netlify.app/"><p class="hover:text-red-500 hover:font-medium">FAQ accordion card</p></a>
+
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
+          <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"> 177/4 Phon Sub-district KhamMuang District, Kalasin Province, 46180, Thailand
+            Tel: 099-219-xxxx
+            Email: Bu.narakorn@gmail.com.</p>
+          <form action="#" class="space-y-8">
+              <div>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+              </div>
+              <div>
+                  <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+              </div>
+              <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              </div>
+              <button class="shadow-md rounded-lg text-sm font-medium p-2 ">Send Message</button>
+          </form>
+      </div>
+    </section>
+</div>
+</body>
+</html>
